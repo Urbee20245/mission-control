@@ -62,7 +62,7 @@ export async function POST(request: Request) {
     const progress: Array<{ step: string; detail: string }> = []
 
     const fixResult = await runOpenClaw(['doctor', '--fix'], { timeoutMs: 120000 })
-    progress.push({ step: 'doctor', detail: 'Applied OpenClaw doctor config fixes.' })
+    progress.push({ step: 'doctor', detail: 'Applied Hermes doctor config fixes.' })
 
     try {
       await runOpenClaw(['sessions', 'cleanup', '--all-agents', '--enforce', '--fix-missing'], { timeoutMs: 120000 })
@@ -111,11 +111,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'OpenClaw is not installed or not reachable' }, { status: 400 })
     }
 
-    logger.error({ err: error }, 'OpenClaw doctor fix failed')
+    logger.error({ err: error }, 'Hermes doctor fix failed')
 
     return NextResponse.json(
       {
-        error: 'OpenClaw doctor fix failed',
+        error: 'Hermes doctor fix failed',
         detail,
         status: parseOpenClawDoctorOutput(detail, code ?? 1, {
           stateDir: config.openclawStateDir,

@@ -249,7 +249,7 @@ export default function Home() {
       })
       .catch(() => {})
 
-    // Check for OpenClaw updates
+    // Check for Hermes updates
     fetch('/api/openclaw/version')
       .then(res => res.ok ? res.json() : null)
       .then(data => {

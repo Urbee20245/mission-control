@@ -164,7 +164,7 @@ function OpenClawSetup({ onClose, onComplete }: { onClose: () => void; onComplet
               <span className="text-lg">1</span>
               <div>
                 <p className="text-sm font-medium">Health Check</p>
-                <p className="text-xs text-muted-foreground">Run OpenClaw doctor to check gateway configuration and connectivity.</p>
+                <p className="text-xs text-muted-foreground">Run Hermes doctor to check gateway configuration and connectivity.</p>
               </div>
             </div>
           </div>

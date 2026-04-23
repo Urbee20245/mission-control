@@ -52,7 +52,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Mission Control — AI Agent Orchestration Dashboard',
+  title: 'MrHolmesHQ — Mission Control',
   description: 'Open-source dashboard for AI agent orchestration. Manage agent fleets, dispatch tasks, track costs, and coordinate multi-agent workflows. Self-hosted, zero dependencies, SQLite-powered.',
   metadataBase,
   icons: {
@@ -64,22 +64,22 @@ export const metadata: Metadata = {
     shortcut: ['/icon.png'],
   },
   openGraph: {
-    title: 'Mission Control — AI Agent Orchestration Dashboard',
+    title: 'MrHolmesHQ — Mission Control',
     description: 'Open-source dashboard for AI agent orchestration. Manage agent fleets, dispatch tasks, track costs, and coordinate multi-agent workflows.',
-    images: [{ url: '/brand/mc-logo-512.png', width: 512, height: 512, alt: 'Mission Control — open-source AI agent orchestration dashboard' }],
+    images: [{ url: '/brand/mc-logo-512.png', width: 512, height: 512, alt: 'MrHolmesHQ Mission Control — open-source AI agent orchestration dashboard' }],
     type: 'website',
-    siteName: 'Mission Control',
+    siteName: 'MrHolmesHQ Mission Control',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mission Control — AI Agent Orchestration Dashboard',
+    title: 'MrHolmesHQ — Mission Control',
     description: 'Open-source dashboard for AI agent orchestration. Manage agent fleets, dispatch tasks, track costs, and coordinate multi-agent workflows.',
     images: ['/brand/mc-logo-512.png'],
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Mission Control',
+    title: 'MrHolmesHQ Mission Control',
   },
 }
 

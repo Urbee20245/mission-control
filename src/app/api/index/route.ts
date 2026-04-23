@@ -141,7 +141,7 @@ const endpoints: Endpoint[] = [
   { path: '/api/releases/update', methods: ['POST'], description: 'Update Mission Control to a specific release tag', tag: 'System', auth: 'admin' },
   { path: '/api/openclaw/version', methods: ['GET'], description: 'Installed OpenClaw version and latest release metadata', tag: 'System', auth: 'public' },
   { path: '/api/openclaw/update', methods: ['POST'], description: 'Update OpenClaw to the latest stable release', tag: 'System', auth: 'admin' },
-  { path: '/api/openclaw/doctor', methods: ['GET', 'POST'], description: 'Inspect and fix OpenClaw configuration drift', tag: 'System', auth: 'admin' },
+  { path: '/api/openclaw/doctor', methods: ['GET', 'POST'], description: 'Inspect and fix Hermes configuration drift', tag: 'System', auth: 'admin' },
 
   // ── Local ─────────────────────────────────────────
   { path: '/api/local/flight-deck', methods: ['GET'], description: 'Local flight deck status', tag: 'Local', auth: 'viewer' },

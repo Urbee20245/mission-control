@@ -254,7 +254,7 @@ export async function DELETE(
           .replace(/^-+|-+$/g, '') || agent.name
       await removeAgentFromConfig({ id: openclawId, name: agent.name })
     } catch (err: any) {
-      configCleanupWarning = `OpenClaw config cleanup skipped for ${agent.name}: ${err?.message || 'unknown error'}`
+      configCleanupWarning = `Hermes config cleanup skipped for ${agent.name}: ${err?.message || 'unknown error'}`
       logger.warn({ err, agent: agent.name }, 'Failed to remove OpenClaw agent config entry')
     }
 

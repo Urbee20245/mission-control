@@ -1,0 +1,28 @@
+app = "mrholmes-mc"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "3000"
+  NEXT_PUBLIC_GATEWAY_OPTIONAL = "true"
+  MC_ALLOWED_HOSTS = "localhost,127.0.0.1,::1,mrholmeshq.com,mc.mrholmeshq.com,mrholmes-mc.fly.dev"
+  MC_COOKIE_SAMESITE = "lax"
+  NODE_OPTIONS = "--max-old-space-size=1536"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  memory = "2gb"
+  cpu_kind = "shared"
+  cpus = 2
+
+[mounts]
+  source = "mc_data"
+  destination = "/app/.data"

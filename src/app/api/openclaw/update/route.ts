@@ -59,12 +59,12 @@ export async function POST(request: Request) {
       err?.stderr?.toString?.()?.trim() ||
       err?.stdout?.toString?.()?.trim() ||
       err?.message ||
-      'Unknown error during OpenClaw update'
+      'Unknown error during Hermes update'
 
-    logger.error({ err }, 'OpenClaw update failed')
+    logger.error({ err }, 'Hermes update failed')
 
     return NextResponse.json(
-      { error: 'OpenClaw update failed', detail },
+      { error: 'Hermes update failed', detail },
       { status: 500 }
     )
   }
